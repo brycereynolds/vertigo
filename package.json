@@ -1,0 +1,32 @@
+{
+  "name": "vertigo",
+  "version": "0.0.1",
+  "description": "For those afraid of climbing the ansible tower, this is a simple REST API for your ansible playbooks.",
+  "main": "app/app.js",
+  "scripts": {
+    "start": "node app/app.js",
+    "test": "PORT=10001 NODE_ENV=test mocha -R spec -b --recursive",
+    "prod_start": "forever start app/app.js",
+    "prod_stop": "forever stop app/app.js"
+  },
+  "author": "Bryce Reynolds brycereynoldsdesign@gmail.com",
+  "license": "GNU General Public License",
+  "dependencies": {
+    "bluebird": "^2.9.24",
+    "hapi": "^8.4.0",
+    "hapi-swagger": "^0.7.3",
+    "require-env": "0.0.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brycereynolds/vertigo"
+  },
+  "devDependencies": {
+    "mocha": "^2.2.4",
+    "should": "^6.0.1",
+    "supertest": "^0.15.0"
+  },
+  "engines": {
+    "node": "0.12.2"
+  }
+}
