@@ -5,7 +5,7 @@
 var Hapi = require('hapi');
 var server = new Hapi.Server();
 var port = (process.env.PORT || 3000);
-var host = (process.env.host || '127.0.0.1');
+var host = (process.env.host || '0.0.0.0');
 
 console.log('Server starting on: ' + host + ':' + port);
 
