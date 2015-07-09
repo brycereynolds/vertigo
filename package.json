@@ -15,7 +15,8 @@
     "bluebird": "^2.9.24",
     "hapi": "^8.4.0",
     "hapi-swagger": "^0.7.3",
-    "require-env": "0.0.4"
+    "require-env": "0.0.4",
+    "util": "^0.10.3"
   },
   "repository": {
     "type": "git",
