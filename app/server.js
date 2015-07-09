@@ -14,15 +14,7 @@ console.log('Server starting on: ' + host + ':' + port);
 
 server.connection({
   host: host,
-  port: port,
-  routes: {
-    cors: {
-      origin: ['*'],
-      methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS', 'HEAD'],
-      headers: ['content-type', 'x-identity-token'],
-      isOriginExposed: false
-    }
-  }
+  port: port
 });
 
 server.start(function (){
